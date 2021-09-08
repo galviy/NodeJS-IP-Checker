@@ -30,7 +30,6 @@ readline.question('IP : ', ip => {
                                                                                 request.get(`https://ipapi.co/${ip}/country_area`, function(err, response, country_area) {
                                                                                     request.get(`https://ipapi.co/${ip}/longitude`, function(err, response, longitude) {
                                                                                         console.log(`Region: ${region}\nTimeZone: ${timezone}\nCurrency: ${currency}\nCountry: ${country}\ncountry code: ${country_code}\nCountry code3: ${country_code_iso3}\nCountry LTD: ${country_tld}\nCont_Code: ${continent_code}\nPostal Code: ${postal}\nLatitude: ${latitude}\ntimezone: ${timezone}\ncurrency name: ${currency_name}\nlanguages: ${languages}\ncountry population: ${country_population}\ncountry area: ${country_area}\nlongitude: ${longitude}`);
-                                                                                        readline.close();
                                                                                     });
                                                                                 });
                                                                             });
